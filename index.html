@@ -198,7 +198,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-06-05 00:00:00 / 修改时间：21:17:18" itemprop="dateCreated datePublished" datetime="2022-06-05T00:00:00+08:00">2022-06-05</time>
+              <time title="创建时间：2022-06-05 00:00:00 / 修改时间：21:43:39" itemprop="dateCreated datePublished" datetime="2022-06-05T00:00:00+08:00">2022-06-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ROS/" itemprop="url" rel="index"><span itemprop="name">ROS</span></a>
+                </span>
             </span>
 
           
@@ -217,17 +226,15 @@
 <p>文件在</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/opt/ros/kinetic/share/ur_description</span><br></pre></td></tr></table></figure>
 
-<p>这时候直接运行转URDF文件会报错</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rosrun xacro xacro ur5_joint_limited_robot.urdf.xacro &gt; ur5.urdf</span><br></pre></td></tr></table></figure>
-
-<p>错误：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash: ur5.urdf: Permission denied</span><br></pre></td></tr></table></figure>
-
-<p>错误原因：当前用户不是root权限<br>解决方法：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo su</span><br></pre></td></tr></table></figure>
-
-<p>然后重新运行转URDF。</p>
-
+<h1 id="这时候直接运行转URDF文件会报错"><a href="#这时候直接运行转URDF文件会报错" class="headerlink" title="这时候直接运行转URDF文件会报错"></a>这时候直接运行转URDF文件会报错</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rosrun xacro xacro ur5_joint_limited_robot.urdf.xacro &gt; ur5.urdf</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/06/05/00-00-00/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -312,8 +319,12 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
