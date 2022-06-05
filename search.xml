@@ -2,6 +2,23 @@
 <search>
   <entry>
     <title>Ubuntu16.04从xacro 生成urdf失败解决方法</title>
+    <url>/2022/06/05/23-00-00/</url>
+    <content><![CDATA[<p>将导入的urdf文件放在mujoco的bin目录下，使用compile出现：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~/.mujoco/mujoco200/bin$ ./compile ur5.urdf ur5.xml</span><br><span class="line">Error: could not open STL file &#x27;../ur5/collsion/base.stl&#x27;</span><br></pre></td></tr></table></figure>
+<p>解决方法：</p>
+<p>检查添加的mujoco tag的缩进</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mujoco&gt;</span><br><span class="line">    &lt;compiler </span><br><span class="line">    meshdir=&quot;../ur5/collision/&quot; </span><br><span class="line">    balanceinertia=&quot;true&quot; </span><br><span class="line">    discardvisual=&quot;false&quot; /&gt;</span><br><span class="line">&lt;/mujoco&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>ROS</category>
+      </categories>
+      <tags>
+        <tag>ROS</tag>
+        <tag>mujoco</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu16.04从xacro 生成urdf失败解决方法</title>
     <url>/2022/06/05/00-00-00/</url>
     <content><![CDATA[<h1 id="首先下载UD的xacro文件等"><a href="#首先下载UD的xacro文件等" class="headerlink" title="首先下载UD的xacro文件等"></a>首先下载UD的xacro文件等</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install ros-kinetic-universal-robot</span><br></pre></td></tr></table></figure>
 
