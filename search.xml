@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Ubuntu16.04从xacro 生成urdf失败解决方法</title>
+    <url>/2022/06/05/00-00-00/</url>
+    <content><![CDATA[<h1 id="首先下载UD的xacro文件等"><a href="#首先下载UD的xacro文件等" class="headerlink" title="首先下载UD的xacro文件等"></a>首先下载UD的xacro文件等</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install ros-kinetic-universal-robot</span><br></pre></td></tr></table></figure>
+
+<p>文件在</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/opt/ros/kinetic/share/ur_description</span><br></pre></td></tr></table></figure>
+
+<p>这时候直接运行转URDF文件会报错</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rosrun xacro xacro ur5_joint_limited_robot.urdf.xacro &gt; ur5.urdf</span><br></pre></td></tr></table></figure>
+
+<p>错误：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">bash: ur5.urdf: Permission denied</span><br></pre></td></tr></table></figure>
+
+<p>错误原因：当前用户不是root权限<br>解决方法：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo su</span><br></pre></td></tr></table></figure>
+
+<p>然后重新运行转URDF。</p>
+]]></content>
+      <tags>
+        <tag>博客           //多个标签可以这样添加</tag>
+        <tag>hexo</tag>
+        <tag>[object Object]</tag>
+      </tags>
+  </entry>
+</search>
