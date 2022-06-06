@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Windows ThunderBird设置开机启动</title>
+    <url>/2022/06/06/23-00-00/</url>
+    <content><![CDATA[<p>在“运行”窗口中输入”regedit”， 打开注册表</p>
+<p>注册表如下：</p>
+<p>依次打开如下路径：</p>
+<p>HKEY_LOCAL_MACHINE&#x2F;SOFTWARE&#x2F;Microsoft&#x2F;Windows&#x2F;CurrentVersion&#x2F;Run</p>
+<p>在右侧区域，右键 –&gt; “字符串值(S)”, 然后在“名称”列中输入要启动的软件的名字（也就是给该软件起个名，比如我这里就输入ThunderBird）</p>
+<p>在该项上右键，选择“修改”，在“数据数值”文本框中输入Thunderbird应用程序的绝对路径</p>
+]]></content>
+      <categories>
+        <category>ROS</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>ThunderBird</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Ubuntu16.04 mujoco生成xml失败解决方法</title>
     <url>/2022/06/05/23-00-00/</url>
     <content><![CDATA[<p>将导入的urdf文件放在mujoco的bin目录下，使用compile出现：</p>
