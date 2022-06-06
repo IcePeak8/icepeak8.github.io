@@ -5,9 +5,12 @@
     <url>/2022/06/05/23-00-00/</url>
     <content><![CDATA[<p>将导入的urdf文件放在mujoco的bin目录下，使用compile出现：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~/.mujoco/mujoco200/bin$ ./compile ur5.urdf ur5.xml</span><br><span class="line">Error: could not open STL file &#x27;../ur5/collsion/base.stl&#x27;</span><br></pre></td></tr></table></figure>
+
 <p>解决方法：</p>
 <p>检查添加的mujoco tag的缩进</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mujoco&gt;</span><br><span class="line">    &lt;compiler </span><br><span class="line">    meshdir=&quot;../ur5/collision/&quot; </span><br><span class="line">    balanceinertia=&quot;true&quot; </span><br><span class="line">    discardvisual=&quot;false&quot; /&gt;</span><br><span class="line">&lt;/mujoco&gt;</span><br></pre></td></tr></table></figure>
+
+<p>参考链接：<a href="https://zhuanlan.zhihu.com/p/99991106">MuJoCo的机器人建模</a></p>
 ]]></content>
       <categories>
         <category>ROS</category>
